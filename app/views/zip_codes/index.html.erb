@@ -1,0 +1,8 @@
+Zip Code
+
+Enter zip code : 
+<%= form_tag(search_zip_codes_path, method: "post") do %>
+  zip code :
+  <%= text_field_tag(:zip_code) %>
+  <%= submit_tag("Search") %>
+<% end %>
